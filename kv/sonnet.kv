@@ -5,7 +5,8 @@
         orientation: "horizontal"
         size: root.size
 
-        AnchorLayout:
+        BoxLayout:
+            orientation: "vertical"
             size: root.size
             
             # canvas: 
@@ -14,16 +15,20 @@
             #     Rectangle:
             #         size: self.size
             Label:
+                size_hint_y: .2
                 text: "Sonnet"
+                pos_hint: {"top": .9, "center_x": .3}
                 font_size: "40sp"
-                anchor_x: 'center'
-                anchor_y: 'top'
+                #anchor_x: 'left'
+                #anchor_y: 'top'
                 
         
             Label:
-                anchor_x: 'center'
-                anchor_y: 'center'
+                size_hint_y: .8
+                #anchor_x: 'center'
+                #anchor_y: 'center'
                 text: "fjdasklfjdksjkl\nfjkdlasjfkldsajfkdj\nfjdasjfkldsajfldksaj\nfjdskalfjdklsajfdkl"
+                pos_hint: {"top": .9, "center_x": .3}
                 font_size: "20sp"
         
         BoxLayout:
@@ -33,8 +38,8 @@
                 text: "return"
                 font_size: "20sp"
                 size_hint: None, None
-                pos_hint: {"top": .9, "center_x": .6 }
-                height: 60
-                width: 100
+                pos_hint: {"top": .9, "center_x": .5 }
+                height: 80
+                width: 180
                 padding: 
             
